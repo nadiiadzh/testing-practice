@@ -2,7 +2,7 @@
 // DEFINE FUNCTION(S)
 // ==================================================
 function sum(num1, num2) {
-  
+
 	if (num1 === undefined) num1 = 0;
 	if (num2 === undefined) num2 = 0;
 	return num1 + num2
@@ -24,13 +24,13 @@ try {
   // --------------------------------------------------
   // It should ignore additional numbers.
   var result = sum(1,2,3,4,5);
-  if (result !== 3) throw new Error('Expected sum(1,2) to be 3. Received: ' + result);
+  if (result !== 3) throw new Error('Expected sum(1,2,3,4,5) to be 3. Received: ' + result);
   // --------------------------------------------------
   // Test Case 3
   // --------------------------------------------------
   // When invoked with only 1 number, it should return that number.
   var result = sum(3);
-  if (result !== 3) throw new Error('Expected sum(1) to be 3. Received: ' + result);
+  if (result !== 3) throw new Error('Expected sum(3) to be 3. Received: ' + result);
   // --------------------------------------------------
   // Test Case 4
   // --------------------------------------------------
